@@ -1,0 +1,14 @@
+﻿Program.cs
+Startup.cs
+Properties
+Angular2Demo.csproj
+Angular2Demo.csproj.user
+appsettings.Development.json
+bin
+bs-config.json
+node_modules
+obj
+package-lock.json
+package.json
+tslint.json
+appsettings.json
