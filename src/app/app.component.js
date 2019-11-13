@@ -1,3 +1,7 @@
+/* -----------------------------------
+ * Lista de empleados uso de *ngFor
+ * GACC         201911130845
+ * ----------------------------------- */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17,7 +21,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: " <my-employee></my-employee>\n                "
+        template: " <list-employee></list-employee>\n                "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
