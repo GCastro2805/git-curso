@@ -1,5 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }      from '@angular/forms';      //201911261808  agregué ya que marcaba error en [(ngModel)] para filtrar por sexo
+import { HttpModule }      from '@angular/http';      //201911261808  agregué ya que marcaba error en [(ngModel)]
 
 
 
@@ -10,9 +12,10 @@ import { EmployeeTitlePipe } from './employee/EmployeeTitle.Pipe';
 import { EmployeeCountComponent } from './employee/employeeCount.component';
 
 @NgModule({
-    imports: [BrowserModule],
+    imports: [BrowserModule, FormsModule, HttpModule],    //201911261808  agregué ya que marcaba error en [(ngModel)]
     declarations: [AppComponent, EmloyeeComponent, EmployeeListComponent, EmployeeTitlePipe,
         EmployeeCountComponent],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
+

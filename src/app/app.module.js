@@ -7,6 +7,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms"); //201911261808  agregué ya que marcaba error en [(ngModel)] para filtrar por sexo
+var http_1 = require("@angular/http"); //201911261808  agregué ya que marcaba error en [(ngModel)]
 var app_component_1 = require("./app.component");
 var employee_component_1 = require("./employee/employee.component");
 var employeeList_component_1 = require("./employee/employeeList.component");
@@ -19,7 +21,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule],
         declarations: [app_component_1.AppComponent, employee_component_1.EmloyeeComponent, employeeList_component_1.EmployeeListComponent, EmployeeTitle_Pipe_1.EmployeeTitlePipe,
             employeeCount_component_1.EmployeeCountComponent],
         bootstrap: [app_component_1.AppComponent]
