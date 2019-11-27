@@ -8,14 +8,13 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: ` <list-employee></list-employee>
+    template: ` Your Text: <input type='text' [(ngModel)] = 'userText'/>
+                <br /><br />
+                <simple [simpleInput] = 'userText'></simple>
                 `
 })
 
 export class AppComponent
 {
-    onclick(): void
-    {
-        console.log('Button Clicked');
-    }
+    userText:string = 'Pragim';
 }

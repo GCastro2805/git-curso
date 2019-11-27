@@ -10,11 +10,12 @@ import { EmloyeeComponent } from './employee/employee.component';
 import { EmployeeListComponent } from './employee/employeeList.component';
 import { EmployeeTitlePipe } from './employee/EmployeeTitle.Pipe';
 import { EmployeeCountComponent } from './employee/employeeCount.component';
+import {SimpleComponent} from './Others/simple.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, HttpModule],    //201911261808  agregué ya que marcaba error en [(ngModel)]
     declarations: [AppComponent, EmloyeeComponent, EmployeeListComponent, EmployeeTitlePipe,
-        EmployeeCountComponent],
+        EmployeeCountComponent, SimpleComponent],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
